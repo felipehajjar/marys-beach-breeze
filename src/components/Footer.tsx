@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, WhatsApp } from 'lucide-react';
+import { Facebook, Instagram, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -40,7 +40,7 @@ const Footer = () => {
                 <Facebook size={24} />
               </a>
               <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:text-sand transition-colors">
-                <WhatsApp size={24} />
+                <MessageCircle size={24} />
               </a>
             </div>
             <p className="text-sm">

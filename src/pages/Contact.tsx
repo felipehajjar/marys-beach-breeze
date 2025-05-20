@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
-import { WhatsApp, Mail, MapPin } from 'lucide-react';
+import { MessageCircle, Mail, MapPin } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -56,7 +56,7 @@ const Contact = () => {
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div className="bg-ocean bg-opacity-10 p-3 rounded-full">
-                  <WhatsApp className="text-ocean h-6 w-6" />
+                  <MessageCircle className="text-ocean h-6 w-6" />
                 </div>
                 <div>
                   <h3 className="font-semibold">WhatsApp</h3>

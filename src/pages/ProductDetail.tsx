@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { products } from '@/data/products';
 import { Product } from '@/types';
 import { formatCurrency } from '@/lib/utils';
-import { WhatsApp } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
@@ -97,7 +97,7 @@ const ProductDetail = () => {
               className="bg-green-500 hover:bg-green-600 text-white flex items-center space-x-2"
               size="lg"
             >
-              <WhatsApp size={20} />
+              <MessageCircle size={20} />
               <span>Buy via WhatsApp</span>
             </Button>
           </div>
