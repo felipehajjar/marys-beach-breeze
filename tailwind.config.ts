@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Beach theme colors
+				ocean: {
+					light: '#7FDBFF',
+					DEFAULT: '#3498db',
+					dark: '#1abc9c',
+				},
+				sand: {
+					light: '#f9e79f',
+					DEFAULT: '#f4d03f',
+					dark: '#e9bc0f',
+				},
+				coral: {
+					light: '#f5b7b1',
+					DEFAULT: '#e74c3c',
+					dark: '#c0392b',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +101,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'wave': {
+					'0%': { transform: 'translateX(0)' },
+					'50%': { transform: 'translateX(-25%)' },
+					'100%': { transform: 'translateX(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'wave': 'wave 10s ease-in-out infinite'
+			},
+			fontFamily: {
+				montserrat: ['Montserrat', 'sans-serif'],
+				opensans: ['Open Sans', 'sans-serif'],
+			},
+			backgroundImage: {
+				'ocean-gradient': 'linear-gradient(to right, #3498db, #1abc9c)',
+				'sand-gradient': 'linear-gradient(to right, #f4d03f, #f9e79f)'
 			}
 		}
 	},
